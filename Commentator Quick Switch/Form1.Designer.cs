@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.LeftName = new System.Windows.Forms.TextBox();
             this.LeftTwitter = new System.Windows.Forms.TextBox();
@@ -42,6 +43,7 @@
             this.LoadCommentatorsbtn = new System.Windows.Forms.Button();
             this.FolderDirectory = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ToolTipPopup = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // LeftName
@@ -91,6 +93,7 @@
             this.Switchbtn.Size = new System.Drawing.Size(75, 23);
             this.Switchbtn.TabIndex = 4;
             this.Switchbtn.Text = "Switch";
+            this.ToolTipPopup.SetToolTip(this.Switchbtn, "Switch the current commentators positions.");
             this.Switchbtn.UseVisualStyleBackColor = true;
             this.Switchbtn.Click += new System.EventHandler(this.Switchbtn_Click);
             // 
@@ -123,6 +126,7 @@
             this.SetLeftbtn.Size = new System.Drawing.Size(54, 23);
             this.SetLeftbtn.TabIndex = 7;
             this.SetLeftbtn.Text = "Set Left";
+            this.ToolTipPopup.SetToolTip(this.SetLeftbtn, "Set the selected commentator to the left side boxes.");
             this.SetLeftbtn.UseVisualStyleBackColor = true;
             this.SetLeftbtn.Click += new System.EventHandler(this.SetLeftbtn_Click);
             // 
@@ -135,6 +139,7 @@
             this.SetRightbtn.Size = new System.Drawing.Size(61, 23);
             this.SetRightbtn.TabIndex = 8;
             this.SetRightbtn.Text = "Set Right";
+            this.ToolTipPopup.SetToolTip(this.SetRightbtn, "Set the selected commentator to the right side boxes.");
             this.SetRightbtn.UseVisualStyleBackColor = true;
             this.SetRightbtn.Click += new System.EventHandler(this.SetRightbtn_Click);
             // 
@@ -147,6 +152,7 @@
             this.NewCommentatorbtn.Size = new System.Drawing.Size(104, 23);
             this.NewCommentatorbtn.TabIndex = 9;
             this.NewCommentatorbtn.Text = "New Commentator";
+            this.ToolTipPopup.SetToolTip(this.NewCommentatorbtn, "Create a new commentator into the below directory.");
             this.NewCommentatorbtn.UseVisualStyleBackColor = true;
             this.NewCommentatorbtn.Click += new System.EventHandler(this.NewCommentatorbtn_Click);
             // 
@@ -159,6 +165,7 @@
             this.LoadCommentatorsbtn.Size = new System.Drawing.Size(111, 23);
             this.LoadCommentatorsbtn.TabIndex = 10;
             this.LoadCommentatorsbtn.Text = "Load Commentators";
+            this.ToolTipPopup.SetToolTip(this.LoadCommentatorsbtn, "Select the folder where your commentators data is.");
             this.LoadCommentatorsbtn.UseVisualStyleBackColor = true;
             this.LoadCommentatorsbtn.Click += new System.EventHandler(this.button6_Click);
             // 
@@ -169,6 +176,7 @@
             this.FolderDirectory.ReadOnly = true;
             this.FolderDirectory.Size = new System.Drawing.Size(293, 20);
             this.FolderDirectory.TabIndex = 11;
+            this.ToolTipPopup.SetToolTip(this.FolderDirectory, "The location which all your commentators data is.");
             // 
             // label1
             // 
@@ -178,6 +186,10 @@
             this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 12;
             this.label1.Text = "Directory:";
+            // 
+            // ToolTipPopup
+            // 
+            this.ToolTipPopup.AutomaticDelay = 200;
             // 
             // Form1
             // 
@@ -222,6 +234,7 @@
         private System.Windows.Forms.Button LoadCommentatorsbtn;
         private System.Windows.Forms.TextBox FolderDirectory;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip ToolTipPopup;
     }
 }
 
