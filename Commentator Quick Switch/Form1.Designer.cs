@@ -197,6 +197,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(396, 225);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.FolderDirectory);
             this.Controls.Add(this.LoadCommentatorsbtn);
@@ -209,7 +210,6 @@
             this.Controls.Add(this.LeftTwitter);
             this.Controls.Add(this.LeftName);
             this.Controls.Add(this.Savebtn);
-            this.Controls.Add(this.listBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
